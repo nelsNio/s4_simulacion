@@ -6,8 +6,8 @@ class Servicio(models.Model):
     id_cliente = models.CharField(max_length=35)
     id_mesero=models.CharField(max_length=35)
     tiempo_llegada_cliente= models.TimeField(auto_now_add=True)
-    tiempo_total_cliente=models.CharField(max_length=35)
+    tiempo_total_cliente=models.TimeField()
     tiempo_inicio_limpieza= models.TimeField(auto_now_add=True)
-    tiempo_total_limpieza=models.IntegerField()
-    tiempo_total_servicio=models.IntegerField()
+    tiempo_total_limpieza=models.TimeField()
+    tiempo_total_servicio=models.TimeField()
   
