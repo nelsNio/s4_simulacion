@@ -9,3 +9,4 @@ class Mesa(models.Model):
     ocupado_cliente= models.BooleanField(default= True)
     capacidad_sillas=models.IntegerField()
     calidad=models.IntegerField()
+    comodidad=models.IntegerField()
